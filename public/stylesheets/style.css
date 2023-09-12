@@ -82,4 +82,7 @@ div{
     border-bottom-color: rgba(128, 0, 128, 0.1);;
     border-bottom-width: 20px;
 }
+#pic > img{
+  width: 320px;
+}
 }
