@@ -6,10 +6,10 @@ body{
   background-repeat: repeat-y;
   display: flex;
   flex-direction: column;
-
+  font-size: x-large;
   text-align: center;
   text-shadow: 2px 2px rgba(128, 0, 128, 0.8);;
-  font-family: cursive;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
 }
 
@@ -39,7 +39,6 @@ body{
 #description{
   border-top-width: 5px;
   grid-area: d;
-  font-size: x-large;
   padding: 5%;
 }
 
@@ -74,8 +73,18 @@ div{
   background-color: rgba(128, 0, 128, 0.05);
   border-radius: 5%;
   margin: 2%;
+  font-size: small;
+}
+#footer{
+  font-size: medium;
+}
+a{
+  color: white;
 }
 @media (pointer:none), (pointer:coarse) {
+  body{
+    font-size: xx-large;
+  }
   #landing{
     display: flex;
     flex-direction: column;
@@ -85,5 +94,8 @@ div{
 }
 #pic > img{
   width: 512px;
+}
+#pic{
+  font-size: xx-large;
 }
 }
