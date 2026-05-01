@@ -15,6 +15,9 @@ body{
 #privacy{
   text-align: left;
 }
+#privacy > h2{
+  text-align: center;
+}
 #landing{
   display: grid;
   grid-template-areas:  's t'
