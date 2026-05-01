@@ -12,7 +12,9 @@ body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
 }
-
+#privacy{
+  alight-content: left;
+}
 #landing{
   display: grid;
   grid-template-areas:  's t'
