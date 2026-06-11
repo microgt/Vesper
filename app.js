@@ -22,6 +22,9 @@ app.use('/', indexRouter);
 app.get("/privacy", (req, res)=>{
   res.render('privacy');
 });
+app.get('/app-ads.txt', (req, res) => {
+  res.sendFile(path.join(__dirname, 'app-ads.txt'));
+});
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
