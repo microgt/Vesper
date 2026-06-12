@@ -23,7 +23,10 @@ app.get("/privacy", (req, res)=>{
   res.render('privacy');
 });
 app.get('/app-ads.txt', (req, res) => {
-  res.sendFile(path.join(__dirname, 'app-ads.txt'));
+  res.set('Content-Type', 'text/plain');
+  res.status(200).send(
+    'google.com, pub-2463947338781442, DIRECT, f08c47fec0942fa0'
+  );
 });
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
